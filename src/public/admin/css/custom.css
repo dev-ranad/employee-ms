@@ -1,0 +1,60 @@
+.centrify {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  .confBtn {
+    outline: none;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    transition: all 0.25s;
+    margin: 12px;
+    cursor: pointer;
+    border: 0;
+    padding: 24px;
+    font-size: 32px;
+    background: #324ef1;
+    width: 300px;
+  }
+  .confBtn span {
+    position: relative;
+    color: #fff;
+    transition: all 0.25s cubic-bezier(0.55, 0, 0.1, 1);
+  }
+  .confBtn div {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #909ff5;
+    transform: scale(0, 1);
+    transform-origin: left;
+  }
+  .confBtn:hover, .confBtn:focus {
+    border-color: #909ff5;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+  .confBtn:hover span, .confBtn:focus span {
+    color: #fff;
+    text-shadow: 0 0 5px #555;
+  }
+  .confBtn:active {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    border-color: #909ff5;
+  }
+  .confBtn:active span {
+    text-shadow: 0 2px 8px #333;
+  }
+  .confBtn:active div {
+    transform: scale(1);
+    transition: all 2s cubic-bezier(0.55, 0, 0.1, 1);
+  }
+  
